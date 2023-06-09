@@ -37,4 +37,9 @@ bot.on('callback_query', (query) => {
 
     bot.sendMessage(chatId, faqMessage);
   }
+  if (data === 'help') {
+    const helpMessage = 'Please join our Discord server and open a ticket for direct support: https://discord.com/invite/velar';
+
+    bot.sendMessage(chatId, helpMessage);
+  }
 });
